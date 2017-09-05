@@ -57,6 +57,9 @@ The following pictures shows trend of loss Function, Accuracy and actual data co
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_verify.png?raw=true"/>
 </p>
 
+## Requirement
+* [Keras 2.0.5](https://keras.io)
+
 ## Environment
 	* 2 Intel Xeon E5-2630 v4 2.2GHz, 25M Cache, 8.0 GT/s QPI, Turbo, HT, 10C/20T (85W) Max Mem 2133MHz
 	* 128 GB Ram
