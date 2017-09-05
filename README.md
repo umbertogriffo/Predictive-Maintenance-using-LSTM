@@ -5,17 +5,30 @@
 ## Regression models
 How many more cycles an in-service engine will last before it fails?
     
-## Results
+## Regression Results
 
 The following pictures shows LOSS, MAE and R^2: 
 <p align="center">
-  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_regression_loss.png"  />
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_regression_loss.png"/>
 </p>
 <p align="center">
-  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_mae.png"  />
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_mae.png"/>
 </p>
 <p align="center">
-  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_r2.png"  />
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_r2.png"/>
+</p>
+         
+## Binary classification: 
+Predict if an asset will fail within certain time frame (e.g. cycles)
+
+## Binary classification Results
+
+The following pictures shows LOSS and Accuracy: 
+<p align="center">
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_loss.png"/>
+</p>
+<p align="center">
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_accuracy.png"/>
 </p>
 
 ## References
