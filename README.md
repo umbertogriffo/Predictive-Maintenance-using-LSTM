@@ -9,13 +9,13 @@ How many more cycles an in-service engine will last before it fails?
 
 The following pictures shows LOSS, MAE and R^2: 
 <p align="center">
-  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_regression_loss.png" height="330" width="330" />
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_regression_loss.png"  />
 </p>
 <p align="center">
-  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_mae.png" height="330" width="330" />
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_mae.png"  />
 </p>
 <p align="center">
-  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_r2.png" height="330" width="330" />
+  <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_r2.png"  />
 </p>
 
 ## References
