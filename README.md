@@ -1,4 +1,4 @@
-# LSTMS for Predictive Maintenance
+# LSTM for Predictive Maintenance
 * Author: Umberto Griffo
 * Twitter: @UmbertoGriffo
 
@@ -18,9 +18,9 @@ Each time series can be assumed as being generated from a different engine of th
 The testing data has the same data schema as the training data.
 The only difference is that the data does not indicate when the failure occurs.
 Finally, the ground truth data provides the number of remaining working cycles for the engines in the testing data.
-You can find more details about the data <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
+You can find more details about the data at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
  
-## Results of Regression models
+## Results of Regression model
 
 |Mean Absolute Error|Coefficient of Determination (R^2)|
 |----|----|
