@@ -46,7 +46,7 @@ The following pictures shows the trend of loss Function, Mean Absolute Error, R^
 |----|----|----|----|
 |0.97|0.92|1.0|0.96|
 
-The following pictures shows trend of loss Function, Accuracy and actual data compared to predicted data:: 
+The following pictures shows trend of loss Function, Accuracy and actual data compared to predicted data: 
 <p align="center">
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_loss.png"/>
 </p>
@@ -56,6 +56,11 @@ The following pictures shows trend of loss Function, Accuracy and actual data co
 <p align="center">
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_verify.png?raw=true"/>
 </p>
+
+## Environment
+	* 2 Intel Xeon E5-2630 v4 2.2GHz, 25M Cache, 8.0 GT/s QPI, Turbo, HT, 10C/20T (85W) Max Mem 2133MHz
+	* 128 GB Ram
+	* 1 TB Disk
             
 ## References
 
