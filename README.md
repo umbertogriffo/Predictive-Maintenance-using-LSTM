@@ -1,4 +1,4 @@
-# LSTM for Predictive Maintenance
+# Recurrent Neural Networks for Predictive Maintenance
 * Author: Umberto Griffo
 * Twitter: @UmbertoGriffo
 
@@ -12,8 +12,8 @@
 	* 128 GB Ram
 	* 1 TB Disk
 
-## Introduction
-I build an LSTM network in order to predict remaining useful life of aircraft engines <a href="https://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/#turbofan">[3]</a> based on scenario described at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
+## Problem Description
+In this example I build an LSTM network in order to predict remaining useful life (or time to failure) of aircraft engines <a href="https://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/#turbofan">[3]</a> based on scenario described at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
 The network uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future so that maintenance can be planned in advance.
 The question to ask is "Given these aircraft engine operation and failure events history, can we predict when an in-service engine will fail?"
 We re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
@@ -23,7 +23,7 @@ We re-formulate this question into two closely relevant questions and answer the
 
 ## Data
 In the **Dataset** directory there are the training, test and ground truth datasets.
-The training data consists of multiple multivariate time series with "cycle" as the time unit, together with 21 sensor readings for each cycle.
+The training data consists of **multiple multivariate time series** with "cycle" as the time unit, together with 21 sensor readings for each cycle.
 Each time series can be assumed as being generated from a different engine of the same type.
 The testing data has the same data schema as the training data.
 The only difference is that the data does not indicate when the failure occurs.
