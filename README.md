@@ -2,12 +2,21 @@
 * Author: Umberto Griffo
 * Twitter: @UmbertoGriffo
 
-## Requirement
+## Conda Environment
 * Python 3.6
+* numpy 1.13.3
+* scipy 0.19.1
+* matplotlib 2.0.2
+* spyder 3.2.3
+* scikit-learn 0.19.0
+* h5py 2.7.0 
+* Pillow 4.2.1 
+* pandas 0.20.3
 * Anaconda 3
-* TensorFlow 1.2.0, [Keras 2.0.5](https://keras.io)
+* TensorFlow 1.3.0
+* [Keras 2.1.1](https://keras.io)
 
-## Environment
+## HW Environment
 	* 2 Intel Xeon E5-2630 v4 2.2GHz, 25M Cache, 8.0 GT/s QPI, Turbo, HT, 10C/20T (85W) Max Mem 2133MHz
 	* 128 GB Ram
 	* 1 TB Disk
