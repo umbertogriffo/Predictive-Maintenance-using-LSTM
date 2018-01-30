@@ -85,3 +85,5 @@ The following pictures shows trend of loss Function, Accuracy and actual data co
 - [1] Deep Learning for Predictive Maintenance https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb
 - [2] Predictive Maintenance: Step 2A of 3, train and evaluate regression models https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2
 - [3] A. Saxena and K. Goebel (2008). "Turbofan Engine Degradation Simulation Data Set", NASA Ames Prognostics Data Repository (https://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/#turbofan), NASA Ames Research Center, Moffett Field, CA 
+- [4] Understanding LSTM Networks http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+         
