@@ -2,6 +2,10 @@
 * Author: Umberto Griffo
 * Twitter: @UmbertoGriffo
 
+## Colab
+You can try the code directly on [Colab] (https://colab.research.google.com/drive/1tjIOud2Cc6smmvZsbl-QDBA6TLA2iEtd).
+Save a copy in your drive and enjoy It!
+
 ## Conda Environment
 * Python 3.6
 * numpy 1.13.3
