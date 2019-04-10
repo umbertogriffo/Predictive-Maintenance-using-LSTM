@@ -6,7 +6,7 @@
 You can try the code directly on [Colab](https://colab.research.google.com/drive/1tjIOud2Cc6smmvZsbl-QDBA6TLA2iEtd).
 Save a copy in your drive and enjoy It!
 
-## Conda Environment
+## Sotware Environment
 * Python 3.6
 * numpy 1.13.3
 * scipy 0.19.1
@@ -19,11 +19,6 @@ Save a copy in your drive and enjoy It!
 * Anaconda 3
 * TensorFlow 1.3.0
 * [Keras 2.1.1](https://keras.io)
-
-## HW Environment
-	* 2 Intel Xeon E5-2630 v4 2.2GHz, 25M Cache, 8.0 GT/s QPI, Turbo, HT, 10C/20T (85W) Max Mem 2133MHz
-	* 128 GB Ram
-	* 1 TB Disk
 
 ## Problem Description
 In this example I build an LSTM network in order to predict remaining useful life (or time to failure) of aircraft engines <a href="https://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/#turbofan">[3]</a> based on scenario described at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
@@ -83,7 +78,12 @@ The following pictures shows trend of loss Function, Accuracy and actual data co
 <p align="center">
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_verify.png?raw=true"/>
 </p>
-           
+
+## Who is citing this work?
+
+* In chapter 10 of [Hands-On Artificial Intelligence for IoT](https://www.amazon.it/Hands-Artificial-Intelligence-IoT-techniques/dp/1788836065) book
+	* https://github.com/PacktPublishing/Hands-On-Artificial-Intelligence-for-IoT/tree/master/Chapter10
+
 ## References
 
 - [1] Deep Learning for Predictive Maintenance https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb
