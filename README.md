@@ -86,6 +86,7 @@ We can also create a model to determine if the failure will occur in different t
 
 * In chapter 10 of [Hands-On Artificial Intelligence for IoT](https://www.amazon.it/Hands-Artificial-Intelligence-IoT-techniques/dp/1788836065) book
 	* https://github.com/PacktPublishing/Hands-On-Artificial-Intelligence-for-IoT/tree/master/Chapter10
+* In "Using Recurrent Neural Networks to predict the time for an event" master's thesis (Universitat de Barcelona, Barcelona, Spain). Retrieved from http://diposit.ub.edu/dspace/bitstream/2445/134691/3/memoria.pdf
 
 ## References
 
