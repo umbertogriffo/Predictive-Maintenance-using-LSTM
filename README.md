@@ -6,7 +6,7 @@
 You can try the code directly on [Colab](https://colab.research.google.com/drive/1tjIOud2Cc6smmvZsbl-QDBA6TLA2iEtd).
 Save a copy in your drive and enjoy It!
 
-## Sotware Environment
+## Software Environment
 * Python 3.6
 * numpy 1.13.3
 * scipy 0.19.1
@@ -20,8 +20,8 @@ Save a copy in your drive and enjoy It!
 * [Keras 2.1.1](https://keras.io)
 
 ## Problem Description
-In this example I build an LSTM network in order to predict remaining useful life (or time to failure) of aircraft engines <a href="https://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/#turbofan">[3]</a> based on scenario described at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
-The network uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future so that maintenance can be planned in advance.
+In this example I build an LSTM network in order to predict remaining useful life (or time to failure) of aircraft engines <a href="https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan">[3]</a> based on scenario described at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.azure.ai/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
+The network uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future, so that maintenance can be planned in advance.
 The question to ask is "Given these aircraft engine operation and failure events history, can we predict when an in-service engine will fail?"
 We re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
 
@@ -39,7 +39,7 @@ The following picture shows a sample of the data:
 <p align="center">
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/datasetSample.png"/>
 </p>
-You can find more details about the data at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
+You can find more details about the data at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.azure.ai/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
 
 ## Experimental Results
 ### Results of Regression model
@@ -48,7 +48,7 @@ You can find more details about the data at <a href="https://github.com/Azure/ls
 |----|----|
 |12|0.7965|
 
-The following pictures shows the trend of loss Function, Mean Absolute Error, R^2 and actual data compared to predicted data: 
+The following pictures show the trend of loss Function, Mean Absolute Error, R^2 and actual data compared to predicted data: 
 <p align="center">
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_regression_loss.png"/>
 </p>
@@ -68,7 +68,7 @@ The following pictures shows the trend of loss Function, Mean Absolute Error, R^
 |----|----|----|----|
 |0.97|0.92|1.0|0.96|
 
-The following pictures shows trend of loss Function, Accuracy and actual data compared to predicted data: 
+The following pictures show trend of loss Function, Accuracy and actual data compared to predicted data: 
 <p align="center">
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_loss.png"/>
 </p>
@@ -91,7 +91,6 @@ We can also create a model to determine if the failure will occur in different t
 ## References
 
 - [1] Deep Learning for Predictive Maintenance https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb
-- [2] Predictive Maintenance: Step 2A of 3, train and evaluate regression models https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2
+- [2] Predictive Maintenance: Step 2A of 3, train and evaluate regression models https://gallery.azure.ai/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2
 - [3] A. Saxena and K. Goebel (2008). "Turbofan Engine Degradation Simulation Data Set", NASA Ames Prognostics Data Repository (https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan), NASA Ames Research Center, Moffett Field, CA 
 - [4] Understanding LSTM Networks http://colah.github.io/posts/2015-08-Understanding-LSTMs/
-         
