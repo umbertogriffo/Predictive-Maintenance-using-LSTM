@@ -89,7 +89,7 @@ We can also create a model to determine if the failure will occur in different t
 * In chapter 7 of [Mobile and Wireless Communications with Practical Use-Case Scenarios](https://www.amazon.com/Wireless-Communications-Practical-Use-Case-Scenarios/dp/1032119020) book
 	* https://www.google.pt/books/edition/Mobile_and_Wireless_Communications_with/lvqhEAAAQBAJ?hl=en&gbpv=1
 * In `Using Recurrent Neural Networks to predict the time for an event` master's thesis (Universitat de Barcelona, Barcelona, Spain). Retrieved from [here](http://diposit.ub.edu/dspace/bitstream/2445/134691/3/memoria.pdf)
-* In `Exploring Cloud Assisted Tiny Machine Learning Application Patterns for PHM Scenario`. Retrieved from [here][http://diposit.ub.edu/dspace/bitstream/2445/134691/3/memoria.pdf(https://www.dre.vanderbilt.edu/~gokhale/WWW/papers/PHM21_TinyML_Prognostics.pdf) and [here](https://www.researchgate.net/publication/356519569_The_Future_of_PHM_Could_be_Tiny_under_Cloud_Exploring_Potential_Application_Patterns_of_TinyML_in_PHM_Scenarios)
+* In `Exploring Cloud Assisted Tiny Machine Learning Application Patterns for PHM Scenario`. Retrieved from [here]http://diposit.ub.edu/dspace/bitstream/2445/134691/3/memoria.pdf(https://www.dre.vanderbilt.edu/~gokhale/WWW/papers/PHM21_TinyML_Prognostics.pdf) and [here](https://www.researchgate.net/publication/356519569_The_Future_of_PHM_Could_be_Tiny_under_Cloud_Exploring_Potential_Application_Patterns_of_TinyML_in_PHM_Scenarios)
 
 ## References
 
