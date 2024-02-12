@@ -20,8 +20,8 @@ Save a copy in your drive and enjoy It!
 * [Keras 2.1.1](https://keras.io)
 
 ## Problem Description
-In this example I build an LSTM network in order to predict remaining useful life (or time to failure) of aircraft engines <a href="https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan">[3]</a> based on scenario described at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.azure.ai/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
-The network uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future, so that maintenance can be planned in advance.
+In this example, I build an LSTM network in order to predict remaining useful life (or time to failure) of aircraft engines <a href="https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan">[3]</a> based on the scenario described at <a href="https://github.com/Azure/lstms_for_predictive_maintenance/blob/master/Deep%20Learning%20Basics%20for%20Predictive%20Maintenance.ipynb">[1]</a> and <a href="https://gallery.azure.ai/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2">[2]</a>.
+The network uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future allowing maintenance to be planned in advance.
 The question to ask is "Given these aircraft engine operation and failure events history, can we predict when an in-service engine will fail?"
 We re-formulate this question into two closely relevant questions and answer them using two different types of machine learning models:
 
@@ -29,9 +29,9 @@ We re-formulate this question into two closely relevant questions and answer the
 	* Binary classification: Is this engine going to fail within w1 cycles?
 
 ## Data Summary
-In the **Dataset** directory there are the training, test and ground truth datasets.
+In the **Dataset** directory, there are the training, test and ground truth datasets.
 The training data consists of **multiple multivariate time series** with "cycle" as the time unit, together with 21 sensor readings for each cycle.
-Each time series can be assumed as being generated from a different engine of the same type.
+Each time series can be assumed to be generated from a different engine of the same type.
 The testing data has the same data schema as the training data.
 The only difference is that the data does not indicate when the failure occurs.
 Finally, the ground truth data provides the number of remaining working cycles for the engines in the testing data.
@@ -68,7 +68,7 @@ The following pictures show the trend of loss Function, Mean Absolute Error, R^2
 |----|----|----|----|
 |0.97|0.92|1.0|0.96|
 
-The following pictures show trend of loss Function, Accuracy and actual data compared to predicted data: 
+The following pictures show the trend of loss Function, Accuracy and actual data compared to predicted data: 
 <p align="center">
   <img src="https://github.com/umbertogriffo/Predictive-Maintenance-using-LSTM/blob/master/Output/model_loss.png"/>
 </p>
@@ -88,7 +88,8 @@ We can also create a model to determine if the failure will occur in different t
 	* https://github.com/PacktPublishing/Hands-On-Artificial-Intelligence-for-IoT/tree/master/Chapter10
 * In chapter 7 of [Mobile and Wireless Communications with Practical Use-Case Scenarios](https://www.amazon.com/Wireless-Communications-Practical-Use-Case-Scenarios/dp/1032119020) book
 	* https://www.google.pt/books/edition/Mobile_and_Wireless_Communications_with/lvqhEAAAQBAJ?hl=en&gbpv=1
-* In "Using Recurrent Neural Networks to predict the time for an event" master's thesis (Universitat de Barcelona, Barcelona, Spain). Retrieved from http://diposit.ub.edu/dspace/bitstream/2445/134691/3/memoria.pdf
+* In `Using Recurrent Neural Networks to predict the time for an event` master's thesis (Universitat de Barcelona, Barcelona, Spain). Retrieved from [here](http://diposit.ub.edu/dspace/bitstream/2445/134691/3/memoria.pdf)
+* In `Exploring Cloud Assisted Tiny Machine Learning Application Patterns for PHM Scenario`. Retrieved from [here][http://diposit.ub.edu/dspace/bitstream/2445/134691/3/memoria.pdf(https://www.dre.vanderbilt.edu/~gokhale/WWW/papers/PHM21_TinyML_Prognostics.pdf) and [here](https://www.researchgate.net/publication/356519569_The_Future_of_PHM_Could_be_Tiny_under_Cloud_Exploring_Potential_Application_Patterns_of_TinyML_in_PHM_Scenarios)
 
 ## References
 
