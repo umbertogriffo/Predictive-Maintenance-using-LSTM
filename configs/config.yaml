@@ -1,0 +1,89 @@
+# Predictive Maintenance Configuration File
+# This file centralizes all configurable parameters for reproducibility and maintainability
+
+# Data Configuration
+data:
+  paths:
+    train: "Dataset/PM_train.txt"
+    test: "Dataset/PM_test.txt"
+    truth: "Dataset/PM_truth.txt"
+  
+  preprocessing:
+    # Failure prediction windows (in cycles)
+    w0: 15  # Early warning window
+    w1: 30  # Critical failure window
+    
+    # Normalization method
+    normalization: "minmax"  # Options: minmax, standard, robust
+    
+    # Sequence parameters
+    sequence_length: 50  # Time steps for LSTM input
+    
+  features:
+    settings: ["setting1", "setting2", "setting3"]
+    sensors: ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10",
+              "s11", "s12", "s13", "s14", "s15", "s16", "s17", "s18", "s19", "s20", "s21"]
+
+# Model Configuration
+model:
+  regression:
+    architecture: "lstm"
+    lstm_units: [100, 50]  # Units in each LSTM layer
+    dropout_rate: 0.2
+    output_activation: "linear"
+    optimizer: "rmsprop"
+    loss: "mean_squared_error"
+    metrics: ["mae"]
+    
+  classification:
+    architecture: "lstm"
+    lstm_units: [100, 50]
+    dropout_rate: 0.2
+    output_activation: "sigmoid"
+    optimizer: "adam"
+    loss: "binary_crossentropy"
+    metrics: ["accuracy"]
+
+# Training Configuration
+training:
+  epochs: 100
+  batch_size: 200
+  validation_split: 0.05
+  verbose: 2
+  
+  callbacks:
+    early_stopping:
+      monitor: "val_loss"
+      patience: 10
+      min_delta: 0
+      mode: "min"
+      verbose: 0
+      
+    model_checkpoint:
+      monitor: "val_loss"
+      save_best_only: true
+      mode: "min"
+      verbose: 0
+
+# Output Configuration
+output:
+  paths:
+    models: "Output/"
+    predictions: "Output/"
+    visualizations: "Output/"
+  
+  model_names:
+    regression: "regression_model.h5"
+    classification: "binary_model.h5"
+
+# Reproducibility Configuration
+reproducibility:
+  random_seed: 1234
+  # Note: PYTHONHASHSEED must be set as environment variable before Python starts
+  # Set via: export PYTHONHASHSEED=0 (Linux/Mac) or set PYTHONHASHSEED=0 (Windows)
+
+# Logging Configuration
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/training.log"

@@ -1,0 +1,17 @@
+# Core Deep Learning Framework
+tensorflow>=2.15.0,<3.0.0
+
+# Data Processing
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0,<3.0.0
+scikit-learn>=1.3.0,<2.0.0
+scipy>=1.11.0,<2.0.0
+
+# Visualization
+matplotlib>=3.7.0,<4.0.0
+
+# Model Persistence
+h5py>=3.9.0,<4.0.0
+
+# Image Processing (for visualization)
+Pillow>=10.0.0,<11.0.0
