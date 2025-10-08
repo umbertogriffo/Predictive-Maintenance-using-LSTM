@@ -217,8 +217,11 @@ print(history.history.keys())
 
 # summarize history for Accuracy
 fig_acc = plt.figure(figsize=(10, 10))
-plt.plot(history.history['acc'])
-plt.plot(history.history['val_acc'])
+# Handle both old and new Keras metric naming conventions
+acc_key = 'accuracy' if 'accuracy' in history.history else 'acc'
+val_acc_key = 'val_accuracy' if 'val_accuracy' in history.history else 'val_acc'
+plt.plot(history.history[acc_key])
+plt.plot(history.history[val_acc_key])
 plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
@@ -239,10 +242,12 @@ fig_acc.savefig("../../Output/model_loss.png")
 
 # training metrics
 scores = model.evaluate(seq_array, label_array, verbose=1, batch_size=200)
-print('Accurracy: {}'.format(scores[1]))
+print('Accuracy: {}'.format(scores[1]))
 
 # make predictions and compute confusion matrix
-y_pred = model.predict_classes(seq_array,verbose=1, batch_size=200)
+# Replace deprecated predict_classes() with modern API
+y_pred_proba = model.predict(seq_array, verbose=1, batch_size=200)
+y_pred = (y_pred_proba > 0.5).astype(int)
 y_true = label_array
 
 test_set = pd.DataFrame(y_pred)
@@ -290,10 +295,12 @@ if os.path.isfile(model_path):
 
 # test metrics
 scores_test = estimator.evaluate(seq_array_test_last, label_array_test_last, verbose=2)
-print('Accurracy: {}'.format(scores_test[1]))
+print('Accuracy: {}'.format(scores_test[1]))
 
 # make predictions and compute confusion matrix
-y_pred_test = estimator.predict_classes(seq_array_test_last)
+# Replace deprecated predict_classes() with modern API
+y_pred_test_proba = estimator.predict(seq_array_test_last)
+y_pred_test = (y_pred_test_proba > 0.5).astype(int)
 y_true_test = label_array_test_last
 
 test_set = pd.DataFrame(y_pred_test)
