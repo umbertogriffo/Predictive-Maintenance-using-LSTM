@@ -97,3 +97,5 @@ We can also create a model to determine if the failure will occur in different t
 - [2] Predictive Maintenance: Step 2A of 3, train and evaluate regression models https://gallery.azure.ai/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2
 - [3] A. Saxena and K. Goebel (2008). "Turbofan Engine Degradation Simulation Data Set", NASA Ames Prognostics Data Repository (https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan), NASA Ames Research Center, Moffett Field, CA 
 - [4] Understanding LSTM Networks http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+Setup for Module 5 practice
+Setup for Module 5 practice
